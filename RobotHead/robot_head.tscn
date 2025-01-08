@@ -1,14 +1,19 @@
-[gd_scene load_steps=5 format=3 uid="uid://dj208xppbyowj"]
+[gd_scene load_steps=7 format=3 uid="uid://dj208xppbyowj"]
 
 [ext_resource type="Script" path="res://RobotHead.gd" id="1_ffqkl"]
 [ext_resource type="SpriteFrames" uid="uid://dxafopgk1seaj" path="res://RobotHead/Resources/SFFaces.tres" id="2_1c6js"]
+[ext_resource type="Shader" path="res://RobotHead/Shaders/robot_head.gdshader" id="2_p0bwh"]
 [ext_resource type="SpriteFrames" uid="uid://v638w3rquyt8" path="res://RobotHead/Resources/SFEyes.tres" id="3_obipv"]
 [ext_resource type="SpriteFrames" uid="uid://rcnctj6x0yh3" path="res://RobotHead/Resources/SFMouth.tres" id="4_huuvs"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_21ick"]
+shader = ExtResource("2_p0bwh")
 
 [node name="RobotHead" type="Node2D"]
 script = ExtResource("1_ffqkl")
 
 [node name="Face" type="AnimatedSprite2D" parent="."]
+material = SubResource("ShaderMaterial_21ick")
 sprite_frames = ExtResource("2_1c6js")
 animation = &"Idle"
 

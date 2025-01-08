@@ -1,1 +1,3 @@
 res://RobotHead/robot_head.tscn
+res://RobotHead/Shaders/robot_head.gdshader
+res://Tilesets/TSTestex.tres
