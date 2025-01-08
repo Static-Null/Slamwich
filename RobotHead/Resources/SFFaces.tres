@@ -1,0 +1,14 @@
+[gd_resource type="SpriteFrames" load_steps=2 format=3 uid="uid://dxafopgk1seaj"]
+
+[ext_resource type="Texture2D" uid="uid://b0v5kfv5ad5ka" path="res://RobotHead/Sprites/Faces/face.png" id="1_lxa2x"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_lxa2x")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
